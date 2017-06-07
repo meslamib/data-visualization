@@ -3,3 +3,10 @@ sns.lmplot(x='weight', y='hp', data=auto, hue='origin', palette='Set1')
 
 # Display the plot
 plt.show()
+
+
+# Plot linear regressions between 'weight' and 'hp' grouped row-wise by 'origin'
+sns.lmplot(x= 'weight', y= 'hp', data= auto, row= 'origin')
+
+# Display the plot
+plt.show()
