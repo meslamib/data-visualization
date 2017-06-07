@@ -1,0 +1,34 @@
+# Generate a joint plot of 'hp' and 'mpg' (i.e. for 2 variables)
+sns.jointplot(x='hp', y='mpg', data=auto, kind='kde')
+
+# Display the plot
+plt.show()
+
+# Print the first 5 rows of the DataFrame
+print(auto.head())
+
+# Plot the pairwise joint distributions from the DataFrame 
+sns.pairplot(auto)
+
+# Display the plot
+plt.show()
+
+
+# Print the first 5 rows of the DataFrame
+print(auto.head())
+
+# Plot the pairwise joint distributions grouped by 'origin' along with regression lines
+sns.pairplot(auto, kind='reg', hue= 'origin')
+
+# Display the plot
+plt.show()
+
+
+# Print the covariance matrix
+print(cov_matrix)
+
+# Visualize the covariance matrix using a heatmap
+sns.heatmap(cov_matrix)
+
+# Display the heatmap
+plt.show()
